@@ -7,7 +7,7 @@ date_str = Date.today.strftime("%y%m%d")
 remaining = 2000
 consumed = 0
 
-template_path = File.expand_path(File.join(File.dirname(__FILE__), "cb_note-template.erb"))
+template_path = File.join(File.dirname(__FILE__), "cb_note-template.erb")
 template = File.read(template_path)
 
 renderer = ERB.new(template)
