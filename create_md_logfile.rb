@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+
 require 'erb'
 require 'date'
 require 'fileutils'
