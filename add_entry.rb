@@ -3,7 +3,7 @@ require 'date'
 require 'fileutils'
 
 date_str = Date.today.strftime("%y%m%d")
-notes_dir = File.expand_path("~/notes/s")
+notes_dir = File.join(ENV['NOTES'], 's')
 file_name = "cal_budget-#{date_str}.md"
 file_path = File.join(notes_dir, file_name)
 
